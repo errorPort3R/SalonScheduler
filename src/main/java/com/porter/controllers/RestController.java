@@ -84,7 +84,6 @@ public class RestController
         appointments.save(appointment);
     }
 
-
     @RequestMapping(path = "/appointment/{id}", method = RequestMethod.DELETE)
     public void deleteAppointment(@PathVariable("id") int id)
     {
