@@ -1,6 +1,7 @@
 package com.porter.services;
 
 import com.porter.entities.Appointment;
+import com.porter.entities.User;
 import org.springframework.data.repository.CrudRepository;
 
 /**
@@ -8,4 +9,5 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface AppointmentRepository extends CrudRepository<Appointment, Integer>
 {
+    public Iterable<Appointment> findByUser (User user);
 }
