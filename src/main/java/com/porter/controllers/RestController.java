@@ -96,6 +96,4 @@ public class RestController
     {
         return appointments.findOne(id);
     }
-
-
 }
