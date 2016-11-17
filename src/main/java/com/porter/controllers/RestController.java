@@ -90,7 +90,7 @@ public class RestController
         appointments.delete(id);
     }
 
-    @RequestMapping(path = "/#/appointment/{id}", method = RequestMethod.GET)
+    @RequestMapping(path = "/appointment/{id}", method = RequestMethod.GET)
     public Appointment getAppointment(@PathVariable("id") int id)
     {
         return appointments.findOne(id);
